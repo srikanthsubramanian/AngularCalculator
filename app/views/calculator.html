@@ -1,0 +1,29 @@
+<div class="calculator theme-calculator">
+    <div class="output-value theme-output-value">
+        <div class="operation-string">
+            {{operationString}}
+        </div>
+        {{outputValue}}
+    </div>
+    <div class="numeric-keys-panel theme-numeric-keys-panel">
+        <div class="numeric-keys-container theme-numeric-keys-container">
+            <button class="numeric-key theme-numeric-key" ng-repeat="key in numericKeys"
+                    ng-click="operandClicked(key.value)">
+                {{key.label}}
+            </button>
+        </div>
+        <div class="result-operator-container theme-result-operator-container">
+            <button class="result-operator theme-result-operator" ng-click="calculate()">
+                {{resultOperatorKey.label}}
+            </button>
+        </div>
+    </div>
+    <div class="operator-keys-panel theme-operator-keys-panel">
+        <div class="operator-keys-container theme-operator-keys-container">
+            <button class="operator-key theme-operator-key" ng-repeat="key in operatorKeys"
+                    ng-click="operatorClicked(key.operation,key.label)">
+                {{key.label}}
+            </button>
+        </div>
+    </div>
+</div>

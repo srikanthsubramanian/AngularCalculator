@@ -1,0 +1,84 @@
+.theme-calculator {
+    display: inline-block;
+    width: 235px;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: rgb(241, 241, 241);
+}
+
+.theme-output-value {
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    border: 0;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    content: "0";
+    background: black;
+    color: lawngreen;
+    cursor: default;
+    text-align: right;
+    padding: 0 10px;
+    word-wrap: break-word;
+}
+
+.theme-numeric-keys-panel {
+    overflow: hidden;
+    width: 165px;
+    float: left;
+    padding: 1%;
+}
+
+.theme-numeric-key {
+    width: 50px;
+    height:40px;
+    margin: 1%;
+}
+
+.theme-result-operator {
+    width: 105px;
+    height: 40px;
+    margin: 1%;
+}
+
+.theme-operator-keys-panel {
+    overflow: hidden;
+    width: 60px;
+    float: left;
+    padding: 1%;
+}
+
+.theme-operator-key {
+    width: 50px;
+    height:40px;
+    margin: 3%;
+}
+
+.theme-numeric-key, .theme-result-operator, .theme-operator-key {
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: center;
+    float: left;
+    background-color: white;
+}
+
+.theme-numeric-key:hover, .theme-result-operator:hover, .theme-operator-key:hover {
+    background: #f2f2f2;
+    border-color: black;
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #e5e5e5 0%, #c8c8c8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #c8c8c8));
+    background: -webkit-linear-gradient(top, #e5e5e5 0%, #c8c8c8 100%);
+    background: -o-linear-gradient(top, #e5e5e5 0%, #c8c8c8 100%);
+    background: -ms-linear-gradient(top, #e5e5e5 0%, #c8c8c8 100%);
+    background: linear-gradient(to bottom, #e5e5e5 0%, #c8c8c8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0); }
+
